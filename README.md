@@ -92,9 +92,68 @@ then run the script ```./scripts/ppainter_inference.sh```
 
 if you make any changes run before that: ```chmod +x ./scripts/ppainter_inference.sh```
 
+# tree
+
+.
+└── hoi_video_pairs_dataset/
+    ├── data/
+    │   ├── images_for_ppainter/
+    │   │   ├── object1/
+    │   │   │   ├── object1 (this contains the video frames)/
+    │   │   │   │   ├── frame0001.jpg
+    │   │   │   │   └── ...
+    │   │   │   └── object1_mask (this contains the mask frames)/
+    │   │   │       ├── frame0001.png
+    │   │   │       └── ...
+    │   │   ├── object2
+    │   │   ├── object3
+    │   │   └── ...
+    │   ├── intercap/
+    │   │   ├── object1.mp4
+    │   │   ├── object1_mask_hum.mp4
+    │   │   ├── object1_mask_obj.mp4
+    │   │   ├── object2.mp4
+    │   │   ├── object2_mask_hum.mp4
+    │   │   └── object2_mask_obj.mp4
+    │   └── hoi_dataset/
+    │       └── object1/
+    │           ├── inpaint_out.mp4
+    │           └── masked_in.mp4
+    ├── sample/
+    │   ├── resize.py
+    │   └── ...
+    ├── scripts
+    └── README.md
+    
 # Acknowledgements
 
-For the tree i used:
-(https://tree.nathanfriend.io/)[https://tree.nathanfriend.io/]
+propainter for video inpainting 
+
+   ```bibtex
+   @inproceedings{zhou2023propainter,
+      title={{ProPainter}: Improving Propagation and Transformer for Video Inpainting},
+      author={Zhou, Shangchen and Li, Chongyi and Chan, Kelvin C.K and Loy, Chen Change},
+      booktitle={Proceedings of IEEE International Conference on Computer Vision (ICCV)},
+      year={2023}
+   }
+   ```
+intercap dataset
+
+   ```bibtex
+   @article{huang2024intercap, 
+     title        = {{InterCap}: Joint Markerless {3D} Tracking of Humans and Objects in Interaction from           Multi-view {RGB-D} Images}, 
+     author       = {Huang, Yinghao and Taheri, Omid and Black, Michael J. and Tzionas, Dimitrios}, 
+     journal      = {{International Journal of Computer Vision (IJCV)}}, 
+     volume       = {},
+     number       = {},
+     pages        = {},
+     doi          = {10.1007/s11263-024-01984-1},
+     year         = {2024}
+    }
+   ```
+
+tree
+tree made using 
+[https://tree.nathanfriend.io/](https://tree.nathanfriend.io/)
 
 
