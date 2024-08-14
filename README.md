@@ -93,7 +93,7 @@ then run the script ```./scripts/ppainter_inference.sh```
 if you make any changes run before that: ```chmod +x ./scripts/ppainter_inference.sh```
 
 # tree
-
+```
 .
 └── hoi_video_pairs_dataset/
     ├── data/
@@ -124,7 +124,8 @@ if you make any changes run before that: ```chmod +x ./scripts/ppainter_inferenc
     │   └── ...
     ├── scripts
     └── README.md
-    
+```
+
 # Acknowledgements
 
 propainter for video inpainting 
